@@ -7,6 +7,7 @@ class Pdftk < BaseCustom
   end
   def source_url
     "http://s3.amazonaws.com/source_url_here"
+    "https://s3.amazonaws.com/chromestatics-development-chromecapital-com/pdftk-2.02-dist.tar.gz"
   end
   def used?
     File.exist?("#{build_path}/bin/pdftk") && File.exist?("#{build_path}/bin/lib/libgcj.so.12")
